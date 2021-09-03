@@ -1,6 +1,7 @@
 version: '3'
 services: 
   xrayr: 
+    container_name: xrayr
     image: crackair/xrayr:latest
     volumes:
       - ./config:/etc/XrayR/ # 映射配置文件夹
