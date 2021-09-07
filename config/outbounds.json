@@ -5,6 +5,12 @@
       "settings": {}
     },
     {
+      "tag": "ipv6_out",
+      "protocol": "freedom",
+      "settings": {"domainStrategy": "UseIPv6"
+      }
+    },
+    {
       "tag": "blackhole",
       "protocol": "blackhole",
       "settings": {}
