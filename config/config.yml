@@ -15,7 +15,7 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel
     ApiConfig:
-      ApiHost: "http://127.0.0.1:667"
+      ApiHost: "https://127.0.0.1"
       ApiKey: "123"
       NodeID: 41
       NodeType: Shadowsocks # Node type: V2ray, Shadowsocks, Trojan
@@ -29,7 +29,7 @@ Nodes:
       ListenIP: 0.0.0.0 # IP address you want to listen
       SendIP: 0.0.0.0 # IP address you want to send pacakage
       UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
-      EnableDNS: True # Use custom DNS config, Please ensure that you set the dns.json well
+      EnableDNS: true # Use custom DNS config, Please ensure that you set the dns.json well
       DNSType: UseIP # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       EnableFallback: false # Only support for Trojan and Vless
