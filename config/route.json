@@ -9,7 +9,7 @@
           "domain:hk.centanet.com",
           "domain:hk.centadata.com",
           "domain:alibabacloud.com",
-          "domain:aliyun.com", 
+          "domain:aliyun.com"
         ],
         "outboundTag": "direct"
       },
