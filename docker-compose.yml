@@ -1,9 +1,23 @@
 version: '3'
 services: 
   xrayr: 
-    container_name: xrayr
+    container_name: xrayr_amdyes
     image: crackair/xrayr:latest
     volumes:
-      - ./config:/etc/XrayR/ # 映射配置文件夹
+      - ./config:/etc/XrayR/
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"      
     restart: always
     network_mode: host
+  gost:
+    image: ginuerzh/gost
+    container_name: gost_amdyes
+    restart: always
+    network_mode: host
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+    command: -L=relay+mws://alexj:john922@:2095/:10679
