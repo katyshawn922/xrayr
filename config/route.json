@@ -5,6 +5,7 @@
       {
         "type": "field",
         "domain": [
+          "domain:appinn.com",
           "domain:bochk.com",
           "domain:hk.centanet.com",
           "domain:hk.centadata.com",
