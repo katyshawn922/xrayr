@@ -1,6 +1,6 @@
 {
    "domainStrategy": "IPIfNonMatch",
-   "domainMatcher": "mph",
+   "domainMatcher": "hybrid",
    "rules": [
       {
         "type": "field",
