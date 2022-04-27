@@ -1,0 +1,11 @@
+{
+"Debug": false,
+"Retries": 3,
+"ServeNodes": [],
+"ChainNodes": [],
+"Routes": [
+    {
+        "ServeNodes": ["relay+mws://abc:123@:80"]
+    }
+]
+}
