@@ -14,10 +14,12 @@ services:
   gost:
     image: ginuerzh/gost
     container_name: gost
+    volumes:
+      - ./gost:/etc/gost/    
     restart: always
     network_mode: host
     logging:
       driver: "json-file"
       options:
         max-size: "10m"
-    command: -L=relay+mws://alexj:john922@:2095/:10679
+    command: -C /etc/gost/gost.json
