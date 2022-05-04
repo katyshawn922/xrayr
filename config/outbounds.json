@@ -21,7 +21,7 @@
           }
         ]
       }
-    },    
+    },
     {
       "tag": "blackhole",
       "protocol": "blackhole",
