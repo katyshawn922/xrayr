@@ -28,5 +28,14 @@ Nodes:
       UpdatePeriodic: 60
       EnableDNS: true
       DNSType: UseIP
-      EnableProxyProtocol: false
-      EnableFallback: false
+      EnableProxyProtocol: true
+      EnableFallback: true
+      FallBackConfigs:  
+        -
+          SNI: 
+          Path: /
+          Dest: 80
+          ProxyProtocolVer: 0
+      CertConfig:
+        CertMode: none
+        RejectUnknownSni: false 
