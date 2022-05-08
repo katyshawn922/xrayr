@@ -7,7 +7,7 @@ RouteConfigPath: /etc/XrayR/route.json
 OutboundConfigPath: /etc/XrayR/outbounds.json
 ConnetionConfig:
   Handshake: 4
-  ConnIdle: 60
+  ConnIdle: 10
   UplinkOnly: 2
   DownlinkOnly: 4
   BufferSize: 64
@@ -18,12 +18,12 @@ Nodes:
       ApiHost: "https://127.0.0.1"
       ApiKey: "123"
       NodeID: 41
-      NodeType: Shadowsocks
+      NodeType: Trojan
       Timeout: 30
-      SpeedLimit: 0
+      SpeedLimit: 500
       DeviceLimit: 5
     ControllerConfig:
-      ListenIP: 0.0.0.0
+      ListenIP: 127.0.0.1
       SendIP: 0.0.0.0
       UpdatePeriodic: 60
       EnableDNS: true
