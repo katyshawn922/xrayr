@@ -4,10 +4,11 @@ Log:
   ErrorPath: /etc/XrayR/error.log
 DnsConfigPath: /etc/XrayR/dns.json
 RouteConfigPath: /etc/XrayR/route.json
+InboundConfigPath: # /etc/XrayR/custom_inbound.json 
 OutboundConfigPath: /etc/XrayR/outbounds.json
 ConnetionConfig:
   Handshake: 4
-  ConnIdle: 10
+  ConnIdle: 30
   UplinkOnly: 2
   DownlinkOnly: 4
   BufferSize: 64
