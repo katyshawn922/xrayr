@@ -1,6 +1,5 @@
 {
    "domainStrategy": "IPIfNonMatch",
-   "domainMatcher": "hybrid",
    "rules": [
       {
         "type": "field",
@@ -51,5 +50,10 @@
         ],
         "outboundTag": "blackhole"
       }
+      {
+          "type": "field",
+          "outboundTag": "IPv4_out",
+          "network": "udp,tcp"
+      }      
    ]
 }
