@@ -51,9 +51,9 @@
         "outboundTag": "blackhole"
       }
       {
-          "type": "field",
-          "outboundTag": "IPv4_out",
-          "network": "udp,tcp"
+        "type": "field",
+        "outboundTag": "IPv4_out",
+        "network": "udp,tcp"
       }      
    ]
 }
