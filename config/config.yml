@@ -1,5 +1,5 @@
 Log:
-  Level: info
+  Level: error
   AccessPath: /etc/XrayR/access.log
   ErrorPath: /etc/XrayR/error.log
 DnsConfigPath: /etc/XrayR/dns.json
