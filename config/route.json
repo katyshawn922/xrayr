@@ -17,18 +17,18 @@
       },
       {
         "type": "field",
+        "ip": [
+          "geoip:cn",
+          "geoip:private"
+        ],
+        "outboundTag": "blackhole"
+      },      
+      {
+        "type": "field",
         "domain": [
           "geosite:cn",
           "geosite:epochmediagroup",
           "regexp:(.*.||)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian).(org|com|net)"
-        ],
-        "outboundTag": "blackhole"
-      },
-      {
-        "type": "field",
-        "ip": [
-          "geoip:cn",
-          "geoip:private"
         ],
         "outboundTag": "blackhole"
       },
