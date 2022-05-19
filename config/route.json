@@ -28,7 +28,8 @@
         "domain": [
           "geosite:cn",
           "geosite:epochmediagroup",
-          "regexp:(.*.||)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian).(org|com|net)"
+          "regexp:(.*.||)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian).(org|com|net)",
+          "regexp:(.*\.||)(sigmapool|hashcity|2miners|solo-etc|nanopool|minergate|comining|give-me-coins|hiveon|arsmine|baikalmine|solopool|litecoinpool|mining-dutch|clona|viabtc|beepool|maxhash|bwpool|coinminerz|miningcore|multipools|uupool|minexmr|pandaminer|f2pool|sparkpool|antpool|poolin|slushpool|marathondh|pool.btc)\.(cn|com|org|net|club|net|fr|tw|hk|eu|info|me|io)"
         ],
         "outboundTag": "blackhole"
       },
@@ -52,7 +53,7 @@
       },
       {
         "type": "field",
-        "outboundTag": "IPv4_out",
+        "outboundTag": "direct",
         "network": "udp,tcp"
       }      
    ]
