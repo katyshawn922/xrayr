@@ -1,6 +1,6 @@
 {
    "domainStrategy": "IPIfNonMatch",
-   "domainMatcher": "hybird",   
+   "domainMatcher": "hybird",
    "rules": [
       {
         "type": "field",
