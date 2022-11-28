@@ -42,7 +42,7 @@ Nodes:
       GlobalDeviceLimitConfig:
         Limit: 0
         RedisAddr: 127.0.0.1:6379
-        RedisPassword: YOUR PASSWORD # Redis password
+        RedisPassword: YOUR PASSWORD
         RedisDB: 0
         Timeout: 5
         Expiry: 60
