@@ -8,7 +8,7 @@ InboundConfigPath: # /etc/XrayR/inbounds.json
 OutboundConfigPath: /etc/XrayR/outbounds.json
 ConnetionConfig:
   Handshake: 4
-  ConnIdle: 10
+  ConnIdle: 60
   UplinkOnly: 2
   DownlinkOnly: 4
   BufferSize: 64
@@ -34,34 +34,5 @@ Nodes:
       DisableIVCheck: false
       DisableSniffing: false
       EnableProxyProtocol: true
-      AutoSpeedLimitConfig:
-        Limit: 0
-        WarnTimes: 0
-        LimitSpeed: 0
-        LimitDuration: 0
-      GlobalDeviceLimitConfig:
-        Limit: 0
-        RedisAddr: 127.0.0.1:6379
-        RedisPassword: YOUR PASSWORD
-        RedisDB: 0
-        Timeout: 5
-        Expiry: 60
       EnableFallback: false
-      FallBackConfigs:
-        -
-          SNI:
-          Alpn:
-          Path:
-          Dest: 80
-          ProxyProtocolVer: 0
-      CertConfig:
-        CertMode: none
-        RejectUnknownSni: false
-        CertDomain: ""
-        CertFile: /etc/XrayR/cert/node1.test.com.cert
-        KeyFile: /etc/XrayR/cert/node1.test.com.key
-        Provider: alidns
-        Email: test@me.com
-        DNSEnv:
-          ALICLOUD_ACCESS_KEY: aaa
-          ALICLOUD_SECRET_KEY: bbb
+
