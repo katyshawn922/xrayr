@@ -19,7 +19,7 @@ Nodes:
       ApiHost: "https://127.0.0.1"
       ApiKey: "123"
       NodeID: 41
-      NodeType: Trojan
+      NodeType: Shadowsocks
       Timeout: 30
       SpeedLimit: 500
       DeviceLimit: 0
@@ -33,6 +33,6 @@ Nodes:
       DisableGetRule: false
       DisableIVCheck: false
       DisableSniffing: false
-      EnableProxyProtocol: true
+      EnableProxyProtocol: false
       EnableFallback: false
 
