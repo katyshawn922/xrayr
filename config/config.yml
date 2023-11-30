@@ -28,7 +28,7 @@ Nodes:
       SendIP: 0.0.0.0
       UpdatePeriodic: 60
       EnableDNS: false
-      DNSType: UseIP
+      DNSType: AsIs
       DisableUploadTraffic: false
       DisableGetRule: false
       DisableIVCheck: false
