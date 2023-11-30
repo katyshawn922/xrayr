@@ -8,7 +8,7 @@ InboundConfigPath: # /etc/XrayR/inbounds.json
 OutboundConfigPath: /etc/XrayR/outbounds.json
 ConnetionConfig:
   Handshake: 4
-  ConnIdle: 60
+  ConnIdle: 30
   UplinkOnly: 2
   DownlinkOnly: 4
   BufferSize: 64
@@ -24,10 +24,10 @@ Nodes:
       SpeedLimit: 500
       DeviceLimit: 0
     ControllerConfig:
-      ListenIP: 127.0.0.1
+      ListenIP: 0.0.0.0
       SendIP: 0.0.0.0
       UpdatePeriodic: 60
-      EnableDNS: true
+      EnableDNS: false
       DNSType: UseIP
       DisableUploadTraffic: false
       DisableGetRule: false
