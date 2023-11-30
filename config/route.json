@@ -12,7 +12,8 @@
           "domain:alibabacloud.com",
           "domain:aliyun.com",
           "domain:datongex.com",
-          "domain:macx.cn"
+          "domain:macx.cn",
+          "domain:gstatic.com"
         ],
         "outboundTag": "direct"
       },
