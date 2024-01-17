@@ -9,7 +9,7 @@
           "domain:hk.centanet.com",
           "domain:hk.centadata.com",
           "domain:2023game.com",
-          "domain:oldmantvg.net"           
+          "domain:oldmantvg.net"
         ],
         "outboundTag": "direct"
       },
