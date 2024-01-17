@@ -5,15 +5,9 @@
       {
         "type": "field",
         "domain": [
-          "domain:appinn.com",
           "domain:bochk.com",
           "domain:hk.centanet.com",
-          "domain:hk.centadata.com",
-          "domain:alibabacloud.com",
-          "domain:aliyun.com",
-          "domain:datongex.com",
-          "domain:macx.cn",
-          "domain:gstatic.com"
+          "domain:hk.centadata.com"
         ],
         "outboundTag": "direct"
       },
