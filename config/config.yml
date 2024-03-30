@@ -6,9 +6,9 @@ DnsConfigPath: /etc/XrayR/dns.json
 RouteConfigPath: /etc/XrayR/route.json
 InboundConfigPath: # /etc/XrayR/inbounds.json 
 OutboundConfigPath: /etc/XrayR/outbounds.json
-ConnetionConfig:
+ConnectionConfig:
   Handshake: 4
-  ConnIdle: 30
+  ConnIdle: 60
   UplinkOnly: 2
   DownlinkOnly: 4
   BufferSize: 64
@@ -21,8 +21,8 @@ Nodes:
       NodeID: 41
       NodeType: Shadowsocks
       Timeout: 30
-      SpeedLimit: 500
-      DeviceLimit: 0
+      SpeedLimit: 0
+      DeviceLimit: 5
     ControllerConfig:
       ListenIP: 0.0.0.0
       SendIP: 0.0.0.0
@@ -35,4 +35,10 @@ Nodes:
       DisableSniffing: false
       EnableProxyProtocol: false
       EnableFallback: false
-
+      GlobalDeviceLimitConfig:
+        Enable: true
+        RedisAddr: 127.0.0.1:6379
+        RedisPassword: 
+        RedisDB: 0
+        Timeout: 5 # Timeout for redis request
+        Expiry: 60 # Expiry time (second)      
