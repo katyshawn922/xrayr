@@ -28,7 +28,7 @@
       },
       {
          "type": "field",
-         "outboundTag": "ipv4_out",
+         "outboundTag": "direct",
          "network": "udp,tcp"
       }      
    ]
