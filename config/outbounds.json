@@ -2,8 +2,9 @@
     {
       "tag": "direct",
       "protocol": "freedom",
-      "settings": {}
-    },
+      "settings": {"domainStrategy": "UseIPv4"
+      }
+    },    
     {
       "tag": "ipv6_out",
       "protocol": "freedom",
