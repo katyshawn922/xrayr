@@ -5,26 +5,6 @@
       {
         "type": "field",
         "domain": [
-          "domain:bochk.com",
-          "domain:hk.centanet.com",
-          "domain:hk.centadata.com",
-          "domain:2023game.com",
-          "domain:oldmantvg.net"
-        ],
-        "outboundTag": "direct"
-      },
-      {
-        "type": "field",
-        "ip": [
-          "geoip:cn",
-          "geoip:private"
-        ],
-        "outboundTag": "blackhole"
-      },
-      {
-        "type": "field",
-        "domain": [
-          "geosite:cn",
           "geosite:epochmediagroup",
           "regexp:(.*.||)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian).(org|com|net)",
           "regexp:(.*.||)(sigmapool|hashcity|2miners|solo-etc|nanopool|minergate|comining|give-me-coins|hiveon|arsmine|baikalmine|solopool|litecoinpool|mining-dutch|clona|viabtc|beepool|maxhash|bwpool|coinminerz|miningcore|multipools|uupool|minexmr|pandaminer|f2pool|sparkpool|antpool|poolin|slushpool|marathondh|pool.btc).(cn|com|org|net|club|net|fr|tw|hk|eu|info|me|io)"
@@ -33,19 +13,16 @@
       },
       {
         "type": "field",
-        "protocol": [
-          "bittorrent"
+        "ip": [
+          "geoip:cn",
+          "geoip:private"
         ],
         "outboundTag": "blackhole"
-      },
+      },      
       {
         "type": "field",
-        "ip": [
-          "127.0.0.1/32",
-          "10.0.0.0/8",
-          "fc00::/7",
-          "fe80::/10",
-          "172.16.0.0/12"
+        "protocol": [
+          "bittorrent"
         ],
         "outboundTag": "blackhole"
       }
