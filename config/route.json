@@ -25,7 +25,7 @@
           "bittorrent"
         ],
         "outboundTag": "blackhole"
-      }，
+      },
       {
          "type": "field",
          "outboundTag": "ipv4_out",
