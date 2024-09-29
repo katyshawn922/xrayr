@@ -8,7 +8,7 @@ InboundConfigPath: # /etc/XrayR/inbounds.json
 OutboundConfigPath: /etc/XrayR/outbounds.json
 ConnectionConfig:
   Handshake: 4
-  ConnIdle: 60
+  ConnIdle: 30
   UplinkOnly: 2
   DownlinkOnly: 4
   BufferSize: 64
@@ -40,5 +40,5 @@ Nodes:
         RedisAddr: 127.0.0.1:6379
         RedisPassword: 
         RedisDB: 0
-        Timeout: 5 # Timeout for redis request
-        Expiry: 60 # Expiry time (second)      
+        Timeout: 5
+        Expiry: 60
