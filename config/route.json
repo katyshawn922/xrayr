@@ -18,7 +18,7 @@
           "geoip:private"
         ],
         "outboundTag": "blackhole"
-      },      
+      },
       {
         "type": "field",
         "protocol": [
@@ -30,6 +30,6 @@
          "type": "field",
          "outboundTag": "direct",
          "network": "udp,tcp"
-      }      
+      }
    ]
 }
