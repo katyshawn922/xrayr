@@ -3,13 +3,13 @@
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
-    },     
+    },
     {
       "tag": "ipv4_out",
       "protocol": "freedom",
       "settings": {"domainStrategy": "UseIPv4"
       }
-    },    
+    },
     {
       "tag": "ipv6_out",
       "protocol": "freedom",
