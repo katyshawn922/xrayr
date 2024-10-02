@@ -29,6 +29,23 @@
       }
     },
     {
+      "tag": "proxy"
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "{{ host }}",
+            "port": "{{ port }}",
+            "method": "chacha20-ietf-poly1305",
+            "password": "{{ password}}"
+          }
+        ]
+      },
+      "streamSettings": {
+      "network": "tcp，udp"
+      }
+    },
+    {
       "tag": "blackhole",
       "protocol": "blackhole",
       "settings": {}
