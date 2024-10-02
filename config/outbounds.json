@@ -35,13 +35,14 @@
         "servers": [
           {
             "address": "1.2.3.4",
-            "port": "1234",
             "method": "aes-128-gcm",
-            "password": "12345"
+            "ota": true,
+            "password": "12345",
+            "port": 1234
           }
         ]
       }
-    },
+    },    
     {
       "tag": "blackhole",
       "protocol": "blackhole",
