@@ -14,7 +14,7 @@ ConnectionConfig:
   BufferSize: 64
 Nodes:
   -
-    PanelType: "V2board"
+    PanelType: "NewV2board"
     ApiConfig:
       ApiHost: "https://127.0.0.1"
       ApiKey: "123"
@@ -33,7 +33,7 @@ Nodes:
       DisableGetRule: false
       DisableIVCheck: false
       DisableSniffing: false
-      EnableProxyProtocol: false
+      EnableProxyProtocol: true
       EnableFallback: false
       GlobalDeviceLimitConfig:
         Enable: true
