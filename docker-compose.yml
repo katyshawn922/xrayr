@@ -1,6 +1,6 @@
 version: '3'
-services: 
-  xrayr: 
+services:
+  xrayr:
     container_name: xrayr
     image: ghcr.io/xrayr-project/xrayr:master
     volumes:
@@ -8,15 +8,15 @@ services:
     logging:
       driver: "json-file"
       options:
-        max-size: "10m"      
+        max-size: "10m"
     restart: always
     network_mode: host
-
+  
   gost:
     image: ginuerzh/gost
     container_name: gost
     volumes:
-      - ./gost:/etc/gost/    
+      - ./gost:/etc/gost/
     restart: always
     network_mode: host
     logging:
