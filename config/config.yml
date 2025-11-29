@@ -29,16 +29,4 @@ Nodes:
       UpdatePeriodic: 60
       EnableDNS: false
       DNSType: AsIs
-      DisableUploadTraffic: false
-      DisableGetRule: false
-      DisableIVCheck: false
-      DisableSniffing: false
       EnableProxyProtocol: true
-      EnableFallback: false
-      GlobalDeviceLimitConfig:
-        Enable: true
-        RedisAddr: 127.0.0.1:6379
-        RedisPassword: 
-        RedisDB: 0
-        Timeout: 5
-        Expiry: 60
